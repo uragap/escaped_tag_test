@@ -1,6 +1,6 @@
 ¡Ahora, usemos `<amp-script>` para crear una experiencia más fácil de usar!
 
-# Rebuilding it with <amp-script>
+# Rebuilding it with &lt;amp-script&gt;
 
 Para usar `<amp-script>` , necesitamos importar su &#92; propio &#92; JavaScript. Abra `index.html` y agregue lo siguiente al `<head>` .
 
