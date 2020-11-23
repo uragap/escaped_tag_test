@@ -556,7 +556,7 @@ El atributo `id` es opcional. Los elementos AMP individuales descubren sus propi
 
 La sintaxis dentro del elemento de plantilla depende del idioma de plantilla específico. Sin embargo, el idioma de la plantilla podría estar restringido dentro de AMP. Por ejemplo, de acuerdo con el elemento "plantilla", todas las producciones deben realizarse sobre un DOM válido y bien formado. Todas las salidas de la plantilla también están sujetas a desinfección para garantizar una salida válida para AMP.
 
-To learn about the syntax and restrictions for an template, visit the [template's documentation](https://github.com/ampproject/amphtml/blob/master/spec/./amp-html-templates.md#templates).
+To learn about the syntax and restrictions for an template, visit the [template's documentation](https://github.com/ampproject/amphtml/blob/master/spec/amp-html-templates.md#templates).
 
 ##### URL<a name="url-1"></a>
 
