@@ -6,5 +6,4 @@ Our logic is now complete! When the password matches all our criteria, all of th
     <source src="/static/img/docs/tutorials/custom-javascript-tutorial/finished-project.webm" type="video/webm">
   </amp-video>
 </figure>
-
 If you get stuck, you can always refer to the working code in the `finished_code` directory.
