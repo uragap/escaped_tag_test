@@ -6,7 +6,7 @@ description: 'At this point, the user can add a comment using the amp-form, libr
 
 <amp-img src="/static/img/comment.png" alt="Add comment" height="325" width="300"></amp-img>
 
-*At this point*, the user can add a comment using the [`amp-form`](../../../../documentation/components/reference/amp-form.md) library. Notice how the presence of the form is conditional, depending on the state of the [`amp-access`](../../../../documentation/components/reference/amp-access.md) component:
+At this point, the user can add a comment using the [`amp-form`](../../../../documentation/components/reference/amp-form.md) library. Notice how the presence of the form is conditional, depending on the state of the [`amp-access`](../../../../documentation/components/reference/amp-access.md) component:
 
 [sourcecode:html]
 <form amp-access="loggedIn" amp-access-hide method="post" action-xhr="<%host%>/samples_templates/comment_section/submit-comment-xhr" target="_top">
