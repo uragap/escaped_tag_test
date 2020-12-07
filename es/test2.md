@@ -1,0 +1,3 @@
+¡Nuestra lógica ahora está completa! Cuando la contraseña coincida con todos nuestros criterios, todas las reglas serán verdes y nuestro botón de envío estará habilitado. Ahora debería poder tener una interacción como esta:
+
+<figure class="alignment-wrapper margin-"> <amp-video width="762" height="564" layout="responsive" autoplay loop noaudio> <source src="/static/img/docs/tutorials/custom-javascript-tutorial/finished-project.mp4" type="video/mp4"> <source src="/static/img/docs/tutorials/custom-javascript-tutorial/finished-project.webm" type="video/webm"> </amp-video> </figure> Si se queda atascado, siempre puede consultar el código de trabajo en el directorio de `finished_code` .
