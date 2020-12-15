@@ -5,7 +5,6 @@ The following HTML is generated:
   [example attr1="attr_content" attr2="attr_content"]
   {% raw %}<p>Bob is an excellent builder!</p>
   {% endraw %}[/example]
-  <p>We are not persisting comments</p>
 </code>
 
 Because this is a demo, we are not persisting comments, so it’s only possible to add one comment at the time
