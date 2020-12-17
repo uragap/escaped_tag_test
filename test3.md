@@ -7,3 +7,10 @@ The following HTML is generated:
   {% endraw %}[/example]
   <p>Text</p>
 </pre>
+
+<code>
+  [example attr1="attr_content" attr2="attr_content"]
+  {% raw %}<p>Bob is an excellent builder!</p>
+  {% endraw %}[/example]
+  <p>Text</p>
+</code>
