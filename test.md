@@ -1,8 +1,17 @@
-Now, let's use `<amp-script>` to build a more user-friendly experience!
-
 # Rebuilding it with &lt;amp-script&gt;
 
-To use `<amp-script>`, we need to import its &#92;own &#92;JavaScript. Open `index.html` and add the following to the `<head>`.
+To use `<amp-script>`, we need to import its own JavaScript. Open `index.html` and add the following to the `<head>`.
+
+```html
+<head>
+ ... 
+  <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+  ...
+</head>
+
+```
+
+`<amp-script>` lets us write our own JavaScript inline or in an external file. In this exercise, we'll write enough code to merit a separate file. Create a new directory named `js`, and add to it a new file called `validate.js`.
 
 ## Configure a Web Story for ads
 Web Stories cannot support.
