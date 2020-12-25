@@ -71,11 +71,11 @@ Esta experiencia es aceptable, pero lamentablemente AMP no puede explicar cuál 
 Para usar `<amp-script>` , necesitamos importar su propio JavaScript. Abra `index.html` y agregue lo siguiente al `<head>` .
 
 ```html
-&lt;head&gt;
+<head>
  ...
-  &lt;script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"&gt;&lt;/script&gt;
+  <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
   ...
-&lt;/head&gt;
+</head>
 
 ```
 
@@ -84,11 +84,11 @@ Para usar `<amp-script>` , necesitamos importar su propio JavaScript. Abra `inde
 `<amp-script>` permite que JavaScript manipule sus hijos DOM, los elementos que encierra el componente. Copia esos hijos DOM en un DOM virtual y le da acceso a su código a este DOM virtual. En este ejercicio, queremos que nuestro JavaScript controle nuestro `<form>` y su contenido. Entonces, envolveremos el `<form>` en un componente `<amp-script>` , como este:
 
 ```html
-&lt;amp-script src="js/validate.js" layout="fixed" sandbox="allow-forms" height="500" width="750"&gt;
-  &lt;form method="post" action-xhr="#" target="_top" class="card"&gt;
+<amp-script src="js/validate.js" layout="fixed" sandbox="allow-forms" height="500" width="750">
+  <form method="post" action-xhr="#" target="_top" class="card">
     ...
-  &lt;/form&gt;
-&lt;/amp-script&gt;
+  </form>
+</amp-script>
 ```
 
 Nuestro `<amp-script>` incluye el atributo `sandbox="allow-forms"` . Eso le dice a AMP que está bien que el script modifique el contenido del formulario.
@@ -149,12 +149,12 @@ Tenga en cuenta que podemos usar métodos de API DOM regulares como `getElementB
 Necesitamos agregar estas identificaciones a dos de los elementos. Abra `index.html` , busque la contraseña `<input>` y el `<button>` enviar, y agregue las identificaciones. Agregue un atributo `disabled` al `<button>` enviar también, para evitar que el usuario haga clic en él hasta que lo deseemos.
 
 ```html
-&lt;input type=password
+<input type=password
        id="passwordBox"
 
 ...
 
-&lt;button type="submit" id="submitButton" tabindex="3" disabled&gt;Submit&lt;/button&gt;
+<button type="submit" id="submitButton" tabindex="3" disabled>Submit</button>
 ```
 
 Vuelve a cargar la página. Puede verificar que estos valores globales se establecieron correctamente al verificar en la Consola, tal como lo haría con JavaScript no trabajador:
@@ -164,13 +164,13 @@ Vuelve a cargar la página. Puede verificar que estos valores globales se establ
 También agregaremos identificaciones a cada `<li>` en `<div id="rules">` . Cada uno de estos contiene una regla individual cuyo color queremos controlar. Y eliminaremos cada instancia de `class="invalid"` . ¡Nuestro nuevo JavaScript lo agregará cuando sea necesario!
 
 ```html
-&lt;ul&gt;
-  &lt;li id="lower"&gt;Lowercase letter&lt;/li&gt;
-  &lt;li id="upper"&gt;Capital letter&lt;/li&gt;
-  &lt;li id="digit"&gt;Digit&lt;/li&gt;
-  &lt;li id="special"&gt;Special character (@$!%*?&amp;)&lt;/li&gt;
-  &lt;li id="eight"&gt;At least 8 characters long&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li id="lower">Lowercase letter</li>
+  <li id="upper">Capital letter</li>
+  <li id="digit">Digit</li>
+  <li id="special">Special character (@$!%*?&)</li>
+  <li id="eight">At least 8 characters long</li>
+</ul>
 ```
 
 ## Implementando nuestras comprobaciones de contraseña en JavaScript
@@ -199,12 +199,12 @@ A continuación, `initCheckPassword` con las funciones y asignaciones de escucha
 
 ```js
 function initCheckPassword(el) {
-  const checkPass = (el) =&gt; {
+  const checkPass = (el) => {
     el.classList.remove("invalid");
     el.classList.add("valid");
   };
 
-  const checkFail = (el) =&gt; {
+  const checkFail = (el) => {
     el.classList.remove("valid");
     el.classList.add("invalid");
   };
@@ -226,7 +226,7 @@ li.invalid {
 Ahora estamos listos para agregar la lógica que verifica el contenido de la contraseña `<input>` con nuestras reglas. Agregue una nueva función llamada `checkPassword()` a `initCheckPassword()` , justo antes de la llave de cierre:
 
 ```js
-const checkPassword = () =&gt; {
+const checkPassword = () => {
   const password = element.value;
   let failed = false;
 
@@ -261,7 +261,7 @@ Todo lo que necesitamos ahora son un par de oyentes de eventos. ¿Recuerda que n
 Agregue estos dos detectores de eventos al final de `initCheckPassword()` , directamente antes de la llave de cierre:
 
 ```js
-element.addEventListener("focus", () =&gt; rulesArea.removeAttribute("hidden"));
+element.addEventListener("focus", () => rulesArea.removeAttribute("hidden"));
 element.addEventListener("keyup", checkPassword);
 ```
 
