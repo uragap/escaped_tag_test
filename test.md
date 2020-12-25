@@ -13,6 +13,8 @@ To use `<amp-script>`, we need to import its own JavaScript. Open `index.html` a
 
 `<amp-script>` lets us write our own JavaScript inline or in an external file. In this exercise, we'll write enough code to merit a separate file. Create a new directory named `js`, and add to it a new file called `validate.js`.
 
+{{ image('/static/img/docs/tutorials/custom-javascript-tutorial/relative-url-error.png', 600, 177, layout='intrinsic', alt='Error about relative URL', align='center' ) }}
+
 ## Configure a Web Story for ads
 Web Stories cannot support.
 
