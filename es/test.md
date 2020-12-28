@@ -13,6 +13,8 @@ Para usar `<amp-script>` , necesitamos importar su propio JavaScript. Abra `inde
 
 `<amp-script>` nos permite escribir nuestro propio JavaScript en línea o en un archivo externo. En este ejercicio, escribiremos suficiente código para ameritar un archivo separado. Cree un nuevo directorio llamado `js` y agréguele un nuevo archivo llamado `validate.js` .
 
+{{image (&#39;/ static / img / docs / tutorials / custom-javascript-tutorial /rative-url-error.png&#39;, 600, 177, layout = &#39;intrinsic&#39;, alt = &#39;Error sobre URL relativa&#39;, align = &#39;centro&#39;)}}
+
 ## Configurar una historia web para anuncios
 
 Web Stories no admite.
