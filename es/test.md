@@ -8,12 +8,11 @@ Para usar `<amp-script>` , necesitamos importar su propio JavaScript. Abra `inde
   <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
   ...
 </head>
-
 ```
 
 `<amp-script>` nos permite escribir nuestro propio JavaScript en línea o en un archivo externo. En este ejercicio, escribiremos suficiente código para ameritar un archivo separado. Cree un nuevo directorio llamado `js` y agréguele un nuevo archivo llamado `validate.js` .
 
-{{image (&#39;/ static / img / docs / tutorials / custom-javascript-tutorial /rative-url-error.png&#39;, 600, 177, layout = &#39;intrinsic&#39;, alt = &#39;Error sobre URL relativa&#39;, align = &#39;centro&#39;)}}
+{{image ('/ static / img / docs / tutorials / custom-javascript-tutorial /rative-url-error.png', 600, 177, layout = 'intrinsic', alt = 'Error sobre URL relativa', align = 'centro')}}
 
 ## Configurar una historia web para anuncios
 
