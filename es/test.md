@@ -8,7 +8,6 @@ Para usar `<amp-script>` , necesitamos importar su propio JavaScript. Abra `inde
   <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
   ...
 </head>
-
 ```
 
 `<amp-script>` nos permite escribir nuestro propio JavaScript en línea o en un archivo externo. En este ejercicio, escribiremos suficiente código para ameritar un archivo separado. Cree un nuevo directorio llamado `js` y agréguele un nuevo archivo llamado `validate.js` .
